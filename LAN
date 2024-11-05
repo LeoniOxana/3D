@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>LAN Network in A-Frame</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <!-- Komputer 1 -->
+      <a-entity id="computer1" gltf-model="url(https://github.com/LeoniOxana/3D/blob/main/gaming_laptop_-_computer.glb)"
+                position="-1 0 -3" 
+                rotation="0 0 0" 
+                scale="0.5 0.5 0.5">
+      </a-entity>
+
+      <!-- Komputer 2 -->
+      <a-entity id="computer2" gltf-model="url(https://github.com/LeoniOxana/3D/blob/main/gaming_laptop_-_computer.glb)"
+                position="1 0 -3" 
+                rotation="0 0 0" 
+                scale="0.5 0.5 0.5">
+      </a-entity>
+
+      <!-- Ponsel -->
+      <a-entity id="phone" gltf-model="url(https://github.com/LeoniOxana/3D/blob/main/phone.glb)"
+                position="0 0 -2" 
+                rotation="0 0 0" 
+                scale="0.3 0.3 0.3">
+      </a-entity>
+
+      <!-- Garis penghubung antara Komputer 1 dan Ponsel -->
+      <a-entity line="start: -1 0 -3; end: 0 0 -2; color: blue;"></a-entity>
+
+      <!-- Garis penghubung antara Komputer 2 dan Ponsel -->
+      <a-entity line="start: 1 0 -3; end: 0 0 -2; color: blue;"></a-entity>
+
+      <!-- Kamera -->
+      <a-entity camera position="0 1.6 0"></a-entity>
+    </a-scene>
+  </body>
+</html>
